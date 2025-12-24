@@ -1,1 +1,29 @@
 <!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能客服小幫手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="chat-widget">
+        <div id="chat-button">
+            <img src="assets/icon.svg" alt="客服圖示">
+        </div>
+        <div id="chat-window" class="hidden">
+            <div id="chat-header">
+                <h3>智能客服小幫手</h3>
+            </div>
+            <div id="chat-messages"></div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="載入中..." disabled>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
