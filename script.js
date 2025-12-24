@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isBotReady = false;
 
     // 初始化 RiveScript
-    const bot = new RiveScript();
+    const bot = new RiveScript({ utf8: true });
     bot.loadFile('brain/main.rive').then(onReady).catch(onError);
 
     function onReady() {
